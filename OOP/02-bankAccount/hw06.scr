@@ -1,128 +1,0 @@
-Script started on Thu Jul 25 23:49:19 2024
-d[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004hddate[?2004l
-Thu Jul 25 23:49:20 PDT 2024
-[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004hlls -l[?2004l
-total 16
--rw-r--r--   1 maxfu  staff  602 Jul 23 00:00 Makefile
--rw-r--r--   1 maxfu  staff   43 Jul 25 23:49 hw06.scr
-drwxr-xr-x  10 maxfu  staff  320 Jul 25 23:33 include
-drwxr-xr-x  11 maxfu  staff  352 Jul 25 23:45 src
-[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004hmmake all[?2004l
-c++ -std=c++11 -I./include -MMD -c src/bankAccount.cpp -o obj/bankAccount.o
-c++ -std=c++11 -I./include -MMD -c src/certificateOfDeposit.cpp -o obj/certificateOfDeposit.o
-lsc++ -std=c++11 -I./include -MMD -c src/checkingAccount.cpp -o obj/checkingAccount.o
- -c++ -std=c++11 -I./include -MMD -c src/highInterestChecking.cpp -o obj/highInterestChecking.o
-c++ -std=c++11 -I./include -MMD -c src/highInterestSavings.cpp -o obj/highInterestSavings.o
-l c++ -std=c++11 -I./include -MMD -c src/hw06.cpp -o obj/hw06.o
-c++ -std=c++11 -I./include -MMD -c src/noServiceChargeChecking.cpp -o obj/noServiceChargeChecking.o
-c++ -std=c++11 -I./include -MMD -c src/savingsAccount.cpp -o obj/savingsAccount.o
-c++ -std=c++11 -I./include -MMD -c src/serviceChargeChecking.cpp -o obj/serviceChargeChecking.o
-c++ obj/bankAccount.o obj/certificateOfDeposit.o obj/checkingAccount.o obj/highInterestChecking.o obj/highInterestSavings.o obj/hw06.o obj/noServiceChargeChecking.o obj/savingsAccount.o obj/serviceChargeChecking.o -std=c++11 -I./include -o bin/facc
-[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004hlls -l [?2004l
-total 16
--rw-r--r--   1 maxfu  staff  602 Jul 23 00:00 Makefile
-drwxr-xr-x   3 maxfu  staff   96 Jul 25 23:49 bin
--rw-r--r--   1 maxfu  staff   43 Jul 25 23:49 hw06.scr
-drwxr-xr-x  10 maxfu  staff  320 Jul 25 23:33 include
-drwxr-xr-x@ 20 maxfu  staff  640 Jul 25 23:49 obj
-drwxr-xr-x  11 maxfu  staff  352 Jul 25 23:45 src
-[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004h../. bin/facc[?2004l
-
-Account Number: 23123
-Account Holder: Max Fus
-Initial Balance: $256.17
-______________________
-
-View Transaction:
-Deposit: $22.23 | Balance $334.44
-Withdrawl: $78.27 | Balance $256.17
-
-Final Balance: $256.17
-
-Account Number: 2131
-Account Holder: Bob Lee
-Initial Balance: $31148.19
-______________________
-
-View Transaction:
-Deposit: $22.23 | Balance $31226.46
-Withdrawl: $78.27 | Balance $31148.19
-
-Final Balance: $31148.19
-
-Account Number: 2842
-Account Holder: John Doe
-Initial Balance: $157.45
-______________________
-
-View Transaction:
-Deposit: $22.23 | Balance $235.72
-Withdrawl: $78.27 | Balance $157.45
-
-Final Balance: $157.45
-Annual Percentage Yield (5.00%) : $165.32
-
-Account Number: 8882
-Account Holder: June Ak
-Initial Balance: $868.19
-______________________
-
-View Transaction:
-Deposit: $22.23 | Balance $946.46
-
-Final Balance: $868.19
-Annual Percentage Yield (10.00%) : $955.01
-
-Account Number: 5676
-Account Holder: Mike Hunt
-Initial Balance: $1094.21
-______________________
-
-View Transaction:
-Deposit: $20.24 | Balance $1020.24
-Withdrawl: $73.97 | Balance $1094.21
-
-Final Balance: $1094.21
-Annual Percentage Yield (10.00%) : $1203.63
-
-Certificate of Deposit - Monthly Statement
-Account Number: 3513
-Account Holder: Hugh Jackson
-Current Balance: $1000.00
-Interest Rate: 214520.00%
-Maturity Period: 12 months
-Months Elapsed: 9 months
-Status: Not yet matured
-Interest Earned: $196057061935326754242560.00
-Total Value: $196057061935326754242560.00
-
-Transaction History:
-[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004hggit log[?2004l
-[?1h=[33mcommit f59dcaa1aa2fd98e7ac82cec9aca65785e6a9cc5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
-Author: Max Fu <mfu27@ucmerced.edu>[m
-Date:   Thu Jul 25 23:43:57 2024 -0700[m
-[m
-    all done[m
-[m
-[33mcommit 5880a09202559411d93d8dca63f91cf02913960f[m[m
-Author: Max Fu <mfu27@ucmerced.edu>[m
-Date:   Thu Jul 25 21:09:05 2024 -0700[m
-[m
-    implementing savings account feature[m
-[m
-[33mcommit 1acf60c3579c71294a8cad3f92eceee97d65e830[m[m
-Author: Max Fu <mfu27@ucmerced.edu>[m
-Date:   Wed Jul 24 23:20:57 2024 -0700[m
-[m
-    finished no service charge checking feature[m
-[m
-[33mcommit 4a6ec81894a980d68eb7e57ba2bff06ff17ddfc4[m[m
-Author: Max Fu <mfu27@ucmerced.edu>[m
-Date:   Wed Jul 24 02:19:03 2024 -0700[m
-[m
-    finished working on monthly statement function, with decimal precision[m
-[m
-[33mcommit 84600240585fc74dd1ccd8cbb2457a8e5f051ffc[m[m
-:[K[K[?1l>[1m[7m%[27m[1m[0m                                                                                                                                [0m[27m[24m[J(base) maxfu@Maxs-MacBook-Pro-4 02-bankAccount % [K[?2004h  exit[?2004l
-
-Script done on Thu Jul 25 23:49:46 2024
